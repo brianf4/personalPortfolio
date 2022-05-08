@@ -3758,6 +3758,7 @@ input, select, textarea {
 	/* background-color: #FFE3E3; */
 	-webkit-box-shadow: 9px 5px 9px 1px rgba(202,202,202,0.9); 
   box-shadow: 9px 5px 9px 1px rgba(202,202,202,0.9);
+	flex-grow: 1;
 }
 
 #second img {
@@ -3769,6 +3770,8 @@ input, select, textarea {
 	display: flex;
 	padding: 0;
 	justify-content: space-evenly;
+	padding: 0 4em;
+	column-gap: 4em;
 }
 
 #second ul img{
