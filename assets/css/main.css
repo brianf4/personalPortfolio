@@ -3790,7 +3790,10 @@ input, select, textarea {
 	height: 205px;
 }
 	
-
+#second .workRow2 li a {
+	padding: 0 1em;
+	border-bottom: none;
+}
 
 
 
