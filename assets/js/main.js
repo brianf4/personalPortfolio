@@ -121,3 +121,22 @@
 		});
 
 })(jQuery);
+
+// fetch("https://www.codewars.com/api/v1/users/Brian%20Fuentes")
+//     .then(res => res.json()) // parse response as JSON
+//     .then(data => {
+//       document.querySelector('.honor').innerText = data.honor
+// 			console.log(data.honor)
+//     })
+//     .catch(err => {
+//         console.log(`error ${err}`)
+//     });
+
+fetch("https://www.codewars.com/api/v1/users/Brian%20Fuentes/code-challenges/completed?page=0")
+    .then(res => res.json()) // parse response as JSON
+    .then(data => {
+			document.querySelector('.completed-challenge').innerText = data.data[0].name
+    })
+    .catch(err => {
+        console.log(`error ${err}`)
+    });

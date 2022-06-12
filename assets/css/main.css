@@ -2635,7 +2635,7 @@ input, select, textarea {
 				cursor: default;
 			}
 
-	#footer section {
+	#footer .icon-container {
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -3872,17 +3872,32 @@ input, select, textarea {
 		margin: 0 0 3em -2em;
 	}
 
-		#footer > * {
-			width: calc(50% - 2em);
-			margin-left: 2em;
-		}
+	#footer > * {
+		width: calc(50% - 2em);
+		margin-left: 2em;
+	}
 
-		#footer .copyright {
-			width: 100%;
-			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
-			text-align: center;
-		}
+	#footer .copyright {
+		width: 100%;
+		margin: 2.5em 0 2em 0;
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	#footer .codewars-api {
+		border: 2px solid greenyellow;
+		width: 100%;
+	}
+
+	#footer .codewars-row1 h4{
+		text-align: center;
+	}
+	
+	#footer .codewars-row2 span {
+		display: block;
+	}
+
+	
 
 		@media screen and (max-width: 1280px) {
 
