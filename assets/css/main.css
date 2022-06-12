@@ -3893,7 +3893,7 @@ input, select, textarea {
 		text-align: center;
 	}
 	
-	#footer .codewars-row2 span {
+	#footer .codewars-row2 span:first-child {
 		display: block;
 	}
 

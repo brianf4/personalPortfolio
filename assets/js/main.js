@@ -135,8 +135,13 @@
 fetch("https://www.codewars.com/api/v1/users/Brian%20Fuentes/code-challenges/completed?page=0")
     .then(res => res.json()) // parse response as JSON
     .then(data => {
+			
+			const date = new Date(data.data[0].completedAt)
+			let dateCompleted = date.toDateString()
+			console.log()
 			document.querySelector('.completed-challenge').innerText = data.data[0].name
-    })
+				document.querySelector('.date-completed').innerText = `${dateCompleted} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+		})
     .catch(err => {
         console.log(`error ${err}`)
     });
