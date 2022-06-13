@@ -3885,16 +3885,39 @@ input, select, textarea {
 	}
 
 	#footer .codewars-api {
-		border: 2px solid greenyellow;
+		border: 2px solid white;
 		width: 100%;
+		padding: 1em 1em;
+		margin-top: 5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		height: 400px;
 	}
 
-	#footer .codewars-row1 h4{
+	#footer .codewars-api > *{
+		border: 2px solid plum;
+	}
+
+	#footer .codewars-row1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#footer .codewars-row2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#footer .codewars-row3 {
 		text-align: center;
 	}
 	
-	#footer .codewars-row2 span:first-child {
-		display: block;
+	#footer .codewars-row3, span {
+		padding: 0 .4em;
 	}
 
 	
